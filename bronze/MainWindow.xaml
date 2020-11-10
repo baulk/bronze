@@ -3,10 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:local="clr-namespace:bronze"
         mc:Ignorable="d"
+        ui:WindowHelper.UseModernWindowStyle="True" ui:TitleBar.IsIconVisible="True"
         Title="Bronze 👋 is an interesting tool" Height="450" Icon="/bronze.ico" Width="800" ResizeMode="CanMinimize">
     <Grid>
-
+        <Calendar Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"></Calendar>
+        <TextBox Margin="360,100,0,0" Width="240" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <PasswordBox Margin="360,160,0,0" Width="240" Height="55" HorizontalAlignment="Left" VerticalAlignment="Top"
+                     ui:ControlHelper.Header="Password"
+                     ui:ControlHelper.PlaceholderText="Please input password"></PasswordBox>
     </Grid>
 </Window>
